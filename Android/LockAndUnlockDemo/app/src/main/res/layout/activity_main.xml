@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="270dp"
+        android:layout_height="270dp"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:src="@drawable/logo" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/unlocked" />
+
+    <Button
+        android:id="@+id/buttonLock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="false"
+        android:layout_alignStart="@+id/imageView"
+        android:layout_alignTop="@+id/buttonToggleMode"
+        android:layout_marginRight="16dp"
+        android:background="#4990E2"
+        android:text="鎖上"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/buttonScan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="掃描裝置"
+        android:textColor="#000000" />
+
+    <Button
+        android:id="@+id/buttonUnlock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/buttonToggleMode"
+        android:layout_alignEnd="@+id/imageView"
+        android:layout_alignParentBottom="false"
+        android:layout_alignTop="@+id/buttonToggleMode"
+        android:layout_marginLeft="16dp"
+        android:background="#4990E2"
+        android:text="解鎖"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/buttonToggleMode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonScan"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:background="#4990E2"
+        android:text="切換至自動模式"
+        android:textColor="#FFFFFF" />
+
+</RelativeLayout>

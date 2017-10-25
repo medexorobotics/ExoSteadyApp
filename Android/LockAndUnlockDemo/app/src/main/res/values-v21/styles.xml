@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="android:Theme.Material.Light">
+        <!-- Customize your theme here. -->
+        <item name="android:windowBackground">@drawable/app_background</item>
+        <item name="android:colorPrimary">@color/lightbardark</item>
+        <item name="android:colorPrimaryDark">@color/bardark</item>
+        <item name="android:textColorPrimary">@color/grey</item>
+    </style>
+</resources>
